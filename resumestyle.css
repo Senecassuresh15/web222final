@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /*navbar font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); /*font for others*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    font-family:'Playfair Display', serif;
+    min-height: 400px;
+    max-height: 80vh;
+    color:white;
+    background-image: url(./images/backgroundresume.jpg);
+    padding-top: 20px;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    width:50px;
+    margin:30px 0;
+}
+
+#menuicon{
+    width:25px;
+}
+
+.row1{
+    flex-basis:40%;
+    position:relative;
+    margin-left:50px;
+}
+
+.row1 h2{
+    font-size: 50px;
+}
+.row1 h3{
+    padding-top:20px;
+    font-size: 30px;
+    padding-bottom:30px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+.navigation ul li{
+    color:white;
+    list-style:none;
+    display:inline-block;
+    margin-right: 30px;
+}
+
+.navigation ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.navigation ul li a:hover{
+    color:yellowgreen;
+}
+
+.aboutme{
+    font-family: 'Roboto Slab', serif;
+    color:black;
+    background: radial-gradient(#f7b9b9, #727ce4);
+    padding-top: 40px;
+    padding-bottom:40px;
+    padding-left:5%;
+    padding-right:5%;
+    max-width:90%;
+    display: flex;
+    overflow-x:auto;
+}
+.aboutme h3{
+    font-size:1.8em;
+}
+
+.leftside{
+    float:left;
+    width:75%;
+}
+.leftside h3, .rightside h3 {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.rightside{
+    float:right;
+}
+
+.leftside p{
+margin-right:50px;
+    
+}
+
+
+.education{
+    font-family: 'Roboto Slab', serif;
+    color:white;
+    background: radial-gradient(#140352, #350220);
+    padding-top: 40px;
+    padding-bottom:40px;
+    padding-left:5%;
+    padding-right:5%;
+    max-width:90%;
+    overflow-x:auto;
+}
+.education h1{
+    color:rgb(173, 168, 168);
+    text-align:center;
+    padding-bottom: 20px;
+}
+.edcontent{
+    justify-content: center;
+    display:flex;
+    overflow-x:auto;
+}
+.leftsideed{
+    float:left;
+    padding-right:30px;
+    width:20%;
+    overflow-x: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.leftsideed h4{
+color:rgb(204, 197, 197)
+}
+.leftsideed h3{
+    padding-bottom: 8px;
+}
+
+.rightsideed{
+    float:right;
+    padding-left:20px;
+}
+.rightsideed h3{
+    color: darkgrey;
+}
+
+.bottom{
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(to bottom right, rgb(220, 86, 253), rgb(248, 119, 44));
+    padding-top:30px;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.reflection h1{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 90%;
+    height: 20px;
+}
+.footer ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}

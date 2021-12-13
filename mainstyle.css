@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+*{
+margin:0;
+padding:0;
+font-family: 'Arimo', sans-serif;
+}
+
+body{
+    background-color: rgba(34, 34, 165, 0.767);
+}
+
+#pic{
+max-width: 300px;
+padding-top: 30px;
+padding-bottom: 10px;
+}
+
+.intro{
+justify-content: center;
+text-align: center;
+padding:50px;
+}
+
+.intro h1{
+color:white;
+}
+
+.intro h3{
+    color:white;
+    padding-top:10px;
+    padding-bottom:30px;
+}
+
+.buttons{
+    margin-left:10px;
+    margin-right: 10px;
+    color: white;
+    border:0px;
+    outline:none;
+    padding:12px 10px;
+    width:140px;  
+    cursor: pointer;
+    background: linear-gradient(to right, black, hsl(0, 0%, 31%));
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.buttons i{
+    vertical-align: middle;
+    width: 20px;
+    padding-right: 10px
+}
+.buttons:hover{
+    background:rgb(17, 17, 17);
+    color:rgb(0, 255, 0);
+}
+
+.footer{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+li a{
+    color:rgb(157, 155, 158);
+    padding:10px;
+    display:block;
+    text-align: center;
+}

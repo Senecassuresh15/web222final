@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="contactstyle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="center">
+    <div class="header">
+        <h1>Contact Me</h1>
+        <h4>Fill Out the Form Below</h4>
+    </div>
+    <div class="form">
+        <form id="contactform"   action="https://formspree.io/f/xbjwjkjz" method="POST" onsubmit="return validateForm()">
+            <label for="names">Name</label>
+            <input id="names" name="names" type="text" placeholder="Your Name Here..." required>
+
+            <label for="mail">E-mail Address</label>
+            <input id="mail" name="mail" type="email" placeholder="someone@someemail.com" required>
+
+            <label for="address">Address</label>
+            <input id="address" name="address" type="text" placeholder="1234 Main Street" required>
+
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="Toronto" required>
+
+            <label for="city">Postal Code</label>
+            <input id="postal" name="postal" type="text" placeholder="A1A 2B2" required>
+            
+            <div class="radio">
+            <label for="question">Question</label>
+            <input type="radio" id="question" onchange="hidePay(this)" name="options" value="question" form="contactform">
+            <label for="comment">Comment</label>
+            <input type="radio" id="comment" onchange="hidePay(this)" name="options" value="comment" form="contactform">
+            <label for="comment">Hiring</label>
+            <input type="radio" id="hiring" onchange="hideText(this)" name="options" value="hiring" form="contactform">
+            </div>
+
+            <label hidden id="paylabel" for="pay">Hourly Rate (CAD)</label>
+            <input hidden id="pay"  name="pay" type="number" min="14.00" placeholder="ex: 30.00" form="contactform">
+
+            <label  hidden id="textlabel" for="usertext" hidden>Questions or Comments</label>
+            <textarea  hidden id="usertext" name="usertext" placeholder="Write Your Comment or Question Here..." form="contactform"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li><a href="main.html" target=blank>Home</a></li>
+            <li><a href="resume.html" target=blank>Resume</a></li>
+            <li><a href="honesty.html" target=blank>Honesty</a></li>
+        </ul>
+    </div>
+</body>
+</html>
